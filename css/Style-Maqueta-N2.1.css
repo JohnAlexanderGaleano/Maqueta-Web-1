@@ -150,6 +150,21 @@ header{
     clear: both;
 }
 
+#btns{
+    float: inherit;
+    width: 80%;
+    height: auto;
+    padding: .5em;
+}
+#Gus{
+    width: 100px;
+    height: 3em;
+    margin-left: 4em;
+    border-radius: 15px;
+    background-color: darkolivegreen;
+    border-color: darkblue;
+}
+
 /*  Pie de Pagina  */
 
 
@@ -592,3 +607,7 @@ a.shop{
     
 }
 
+
+#btns {
+    
+}
