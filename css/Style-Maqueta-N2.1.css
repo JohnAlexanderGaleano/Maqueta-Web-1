@@ -1,0 +1,594 @@
+* {
+box-sizing: border-box;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 100;
+}
+ html{
+    background-color: aqua; 
+}
+/***    Header Style    ***/
+
+header{
+    width: 85%;
+    height: 250px;
+    margin: 0 auto;
+    padding: 0;
+    background-color:darkmagenta;        
+    overflow: hidden;
+    text-align: center;
+}
+
+#logo-cabecera{
+    display: inline-block;
+    padding: 0 0.10em 0 2em;
+    margin: 0;
+    color: #fff;
+    font-size: 3.2em;
+    background: url('/img/desolve_logo.png') left center no-repeat;
+    line-height: 165px;
+}
+#logo h2{
+    display: inline-block;
+    color: #fff;
+    font-style: italic;    
+} 
+/*  Styles Main Menu  */
+#nav-principal {
+    margin: 0;
+    background-color: #fff;
+    overflow: hidden;
+    width: 100%;
+}
+#nav-principal ul{
+    list-style-type: none;
+    margin: 0;
+    padding:0;
+    height: 85px;
+    width: 100%;
+}
+#nav-principal li{
+    float: left;     
+}
+#nav-principal li a{
+    text-decoration: none;
+    color: rgb(76, 67, 65);
+    font-size: 1.2em;
+}
+#nav-principal li a:hover{
+    color: rgb(123,121,143);
+    text-shadow: 1px 0px #E0E0E0;
+}
+
+#contenedor{
+    margin:  0 auto ;    
+}
+
+/*     
+      *** Contenedor Principal ***
+     Contiene los Articulos de la WEB
+          Información Principal
+*/
+
+.uno{
+    background-image: url(/img/img-Maq-N2.1/Armenia.jpg) ;
+    background-size: cover;
+    }
+.dos{
+    background-image: url(/img/img-Maq-N2.1/Barranca.jpg) ;
+    background-size: cover;
+    }
+.tres{
+    background-image: url(/img/img-Maq-N2.1/Ciudades.jpg) ;
+    background-size: cover;
+    }
+.cuatro{
+    background-image: url(/img/img-Maq-N2.1/Iglesias.jpg) ;
+    background-size: cover;
+    }
+
+
+/***  Aside - Información Complementaria   ***/
+
+
+#complementario h2{
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 100;
+}
+
+/*  Styles Secundary Menu  */
+#nav-archivos{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#nav-archivos ul{
+   list-style: none;
+    padding: 0 0 0 0.7em;
+    margin: 0;
+}
+#nav-archivos li{ 
+    text-align: center;
+    font-size: 1em;
+}
+#nav-archivos ul li:nth-child(2n){
+    background-color: rgb(237, 228, 214);;
+}
+#nav-archivos ul li:nth-child(2n+1){
+    background-color: rgb(216, 213, 188);;
+}
+#nav-archivos li a{
+    display: block;
+    padding: 0.5em 0;
+}
+#nav-archivos li a:hover{
+    background-color:  rgb(100, 98, 102);
+    color: #fff;
+}
+/* Información Secundaria --- Aside */
+.info-adicional {
+    width: 100%;
+}
+
+.image-monumento {
+    background:  url('/img/monumento.jpg') center no-repeat;
+    height: 200px;
+}
+.image-moneda{
+    background:  url('/img/moneda.jpg') center no-repeat;
+    height: 200px;
+}
+.info-adicional p{
+    padding-left: 10px;
+    
+}
+.clearfix {
+    clear: both;
+}
+
+/*  Pie de Pagina  */
+
+
+
+/*                  ***************************
+                       **** Breakpoints ****
+                    ***************************
+*/
+
+
+/*                    *************************
+************************  Smartphone Style   **********************
+                      *************************                  */
+
+@media (max-width: 480px){
+
+    header, #contenedor, #pagefooter{
+        width: 90%;
+        min-width: 320px;
+        max-width: 480px;
+        marigin: 0 auto;        
+        
+    }
+     h2,h1,div,p,aside{
+        padding: 0;
+        margin: 0;  
+    }
+    header{
+    width: 90%;
+    height: 180px;
+    margin: 0 auto;
+    padding: 0;
+    background-color:darkmagenta;        
+    overflow: hidden;
+    text-align: center;
+}
+    header #logo-cabecera{
+        font-size: 2em;
+        background: url('/img/desolve_logo_50.png') left center no-repeat;
+        padding: 0 0.1em 0 1.5em;
+        line-height: 3em;
+    }
+#logo > h2, #nav-principal ul li a em{
+        display: none;
+    }
+#nav-principal{
+    width:100%;
+    }
+#nav-principal ul{
+    padding-left: 0.5em;
+    }
+#nav-principal li{
+    width: 25%;
+    padding-right: 1em;
+    margin-top:1em;
+    }
+#nav-principal li a{
+    font-size:0.8em;
+    text-align: center;
+    padding-bottom: 50px;
+    display:block;
+    }
+a.galeria{
+    background: url(/img/img-Maq-N2.1/icon_sprites_50.png)no-repeat center 10px;
+    }
+a.gear{
+    background: url(/img/img-Maq-N2.1/icon_sprites_50.png)no-repeat center -190px;
+    }
+a.interac{
+    background: url(/img/img-Maq-N2.1/icon_sprites_50.png)no-repeat center -390px;
+    }
+a.shop{
+    background: url(/img/img-Maq-N2.1/icon_sprites_50.png)no-repeat center -590px;
+    }
+#banner{
+    margin: 0;
+    width: 100%;
+    height: 150px;        
+    background-color: #fff;
+    padding-top: 1em
+    }  
+    #banner h1{
+        text-align: center;
+        font-size: 60px;
+        line-height: 130px;
+        color:dimgrey;
+        margin:0; 
+        padding:0;
+        text-shadow: 4px 2px 1px grey;
+    } 
+    #principal {
+        height: auto;
+        margin:0;
+        padding:0;
+        background-color: #fff;
+        padding-bottom: 1.2em;
+            }
+    #principal p{
+        margin: 0;
+        padding: 0 15px;
+        font-family: "Opens Sans", Arial, Helvetica, sans-serif;
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+.imagen {
+    
+    width:80%;
+    height:200px;
+    margin: 1em auto;
+    }
+
+
+    #complementario{
+        width: 100%;
+        margin: 0 auto;   
+        clear: both;
+        background-color: #fff;
+    }
+    .info-adicional,.info-adicional p{
+        margin:0;
+        padding:0;
+    }
+    #pagefooter{
+        padding:0;
+        height: 350px;        
+        margin: 0 auto;        
+        background-color: rgba(161,33,33,.7);
+    } 
+    #browser{
+        width:300px;
+        margin: 0 auto;
+        height: 130px;
+       text-align: center;
+    }
+    #browser > h3{
+        margin: 0;
+        padding-top: .6em;
+    }
+    #browser > input {
+       margin-top: 0.3em;
+        border-radius: 10px;
+    }
+    #browser > #btn-busqueda{
+        width: 30%;
+    }    
+    #redes{
+        text-align: center;
+        width:20%;
+        margin: 0 auto;
+    }
+    #redes img{
+        width: 50px;
+        height: 50px;
+        
+    }
+      
+
+}
+/*                   *********************
+ ***********************  Tablet Style  ***********************
+                     *********************                     */
+@media (min-width: 481px) and (max-width: 800px){
+
+header, #contenedor, #pagefooter{
+    width: 80%;
+    min-width: 500px;
+    max-width: 800px;
+    margin: 0 auto;
+    }
+ 
+h2,div,p,aside,a,ul,li{
+    padding: 0;
+    margin: 0;  
+    }
+header{
+    height: 250px;
+    }
+#logo h2,#nav-principal ul li a em{
+    display: none;
+    }
+#logo{
+    text-align: center;
+    }
+#logo-cabecera {
+    margin: 0;
+    }
+#banner {
+    height: 200px;
+    background-color: #fff;
+            }
+#banner h1{
+    text-align: center;
+    font-size: 90px;
+    line-height: 200px;
+    color:dimgrey;
+    margin:0; 
+    text-shadow: 4px 2px 1px grey;
+    }
+#nav-principal{
+    width:100%;
+    }
+#nav-principal ul{
+    padding-left: 2em;
+    }
+#nav-principal li{
+    width: 25%;
+    padding-right: 1em;
+    margin-top:1em;
+    }
+#nav-principal ul li a{
+    font-size:1.2em;
+    text-align: center;
+    padding-bottom: 40px;
+    }
+a.galeria{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat center 30px;
+    }
+a.gear{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat center -70px;
+    }
+a.interac{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat center -170px;
+    }
+a.shop{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat center -270px;
+    }    
+#principal{
+    background-color: #fff;
+    height: auto;
+    padding-bottom: 2em;
+    }
+#principal p{
+    padding: 0 15px;
+    font-family: "Opens Sans", Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+.imagen {    
+    width:80%;
+    height:200px;
+    margin: 1em auto;
+    }         
+#complementario {
+    float:none;
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    clear: both;
+    background-color: #fff;
+    }
+    #pagefooter,h3,br,input{
+        margin: 0;
+        padding: 0;
+    }
+    #pagefooter {
+        height:300px;
+        padding:0px 0px;
+        margin: 0 auto;
+        background-color:rgba(100, 98, 102,.5);
+    }
+   #browser{
+        width:300px;
+        margin: 0 auto;
+        height: 180px;
+       text-align: center;
+    }
+    #browser > h3{
+        padding-top: 1em;
+    }
+    #browser > input {
+       margin-top: 2em;
+       border-radius: 10px;
+    }
+    #browser > #btn-busqueda{
+        width: 30%;
+    }
+    
+    
+    #redes{
+        text-align: center;
+        width:100%;
+        margin: 0 auto;
+    }
+      #redes img{
+        width: 80px;
+        height: 80px;
+        
+    }
+}
+/*                   *********************
+ ***********************  Desktop Style  ***********************
+                     *********************                     */
+@media (min-width: 801px) {
+
+    header, #contenedor, #pagefooter{
+        width: 80%;
+        min-width: 780px;
+        max-width: 1280px;
+        marigin: auto 0;
+    }
+    
+/***  Container   ***/
+    
+#contenedor {
+    margin: 0 auto; 
+    padding: 0;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+#banner{
+    float:left;
+    width: 75%;
+    height: 200px;
+    padding: 0;
+    margin: 0;     
+}
+#banner h1{
+    margin:0;
+    text-align: center;
+    font-size: 120px;
+    line-height: 200px;
+    color:dimgrey;
+    text-shadow: 4px 2px 1px grey;
+    }
+
+#nav-principal li{
+    padding-right: 2em;
+    margin-top:1em;
+    width:25%;
+    }
+#nav-principal li:last-child{
+    padding-right:0;    
+    }
+#nav-principal a{
+    font-size:1.2em;
+    text-align: center;
+    padding-left: 20px;
+    display: block;
+    }
+#nav-principal a em{
+    display: block;
+    }
+a.galeria{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat 12% 0;
+    }
+a.gear{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat 20% -100px;
+    }
+a.interac{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat 12% -200px;
+    }
+a.shop{
+    background: url(/img/img-Maq-N2.1/icon_sprites_25.png)no-repeat 29% -300px;
+    }
+#principal {
+    float:left;
+    padding: 0 10px 0 20px;
+    width: 75%;
+    height: 900px;    
+    background-color: #fff;          
+}
+#principal p{
+    font-family: "Opens Sans", Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-align: center;
+    }
+.imagen {
+    width:49%;
+    height:300px;
+    margin: 1em 0;
+    }
+.imgLeft{
+    float:left;
+    }
+.imgRight {
+    float:right;
+    }
+#complementario{
+    margin-top: -200px;
+    padding: 0;
+    width: 25%;
+    float: right;
+    background-color: #fff;
+}
+ 
+/*   Banner y Mision de la Compañia   */
+
+    
+    /*******  PIE DE PAGINA  *******/
+#pagefooter {
+    width: 80%;
+    height: 200px;    
+    margin: 0 auto;
+    padding: 0 30px; 
+    background-color:rgb(100, 98, 102);
+    color: #fff;
+}
+#browser {
+    padding-top: 30px;
+    display: inline-block;
+    float:left;
+}
+
+#browser > input {
+    border-radius: 10px;
+}
+
+#busqueda { 
+    width:140px;
+    -webkit-transition: all 0.4s ease-in-out;
+    background-color: grey;
+    border-color: grey;
+}
+    
+#busqueda:hover {
+    width:200px;
+    background-color: white;
+}
+     #browser > #btn-busqueda{
+        width: 30%;
+    }
+     #redes{
+      float:right;
+      padding-top: 80px;
+      margin: 0 0;
+}
+    #redes > a{
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    
+    }
+    #redes > a:hover{
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    }
+
+    
+}
+
